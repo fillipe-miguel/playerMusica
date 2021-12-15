@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #a7c957;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#frst-container{
+    width: 50%;
+    background-color: #6a994e;
+    margin: auto;
+    margin-top: 20px;
+    border: 3.5px #386641 solid;
+    border-radius: 9px;
+}
+
+#img{
+    margin: auto;
+    margin-top: 40px;
+    /* margin-bottom: 10px; */
+    display: block;
+    width: 60%;
+    border-radius: 9px;
+    border: 3.5px #386641 solid;
+}
+#title{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    font-size: 2rem;
+}
+#title p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#controles{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: #386641;
+    border-radius: 10px;
+    border: 3px black solid;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+.controle{
+    height: 90%;
+    margin: 5px;
+}
+.controle:hover{
+    cursor: pointer;
+}

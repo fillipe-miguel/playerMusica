@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do audio</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="frst-container">
+        <img id="img" src="assets/images/pexels-aarti-vijay-2693529.jpg" alt="Capa do album 1">
+        <audio id="audio" src="assets/audios/Black Mass - Brian Bolger.mp3"></audio>
+        <div id="title">
+            <p id="nomeMusica">Teste de nome - alok</p>
+        </div>
+        <div id="controles">
+            <img class="controle" src="assets/images/controles/para-tras.png" alt="botão anterior">
+            <img onclick="pausar()" class="controle" src="assets/images/controles/botao-de-pausa.png" alt="botão pausar">
+            <img onclick="play()" class="controle" src="assets/images/controles/botao-play.png" alt="botão play">
+            <img onclick="proximo()" class="controle" src="assets/images/controles/para-a-frente.png" alt="botão próxim o">
+            
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
