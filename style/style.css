@@ -7,60 +7,57 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #a7c957;
     font-family: 'PT Sans Narrow', sans-serif;
+    /* background-size: cover; */
+    background-size: cover;
 }
-
-#frst-container{
-    width: 50%;
-    background-color: #6a994e;
-    margin: auto;
-    margin-top: 20px;
-    border: 3.5px #386641 solid;
-    border-radius: 9px;
-}
-
-#capa{
+#music-list{
+    width: 40%;
+    height: 200px;
+    visibility: hidden;
+    background-color: #000000a6;
+    border-radius: 10px;
     margin: auto;
     margin-top: 40px;
-    /* margin-bottom: 10px; */
-    display: block;
-    width: 60%;
-    height: 350px;
-    border-radius: 9px;
-    border: 3.5px #386641 solid;
+
 }
 #title{
-    margin: auto;
-    width: 80%;
     text-align: center;
-    color: black;
+    color: white;
     font-weight: 800;
     font-size: 2rem;
+    text-shadow: 0px 0px 9px white;
 }
+
 #title p{
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
+
 #controles{
-    width: 80%;
-    margin: auto;
-    margin-bottom: 40px;
-    background-color: #386641;
-    border-radius: 10px;
-    border: 3px black solid;
-    height: 80px;
+    width: 100%;
+    background-color: #000000a6;
     text-align: center;
     padding: 10px;
-    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
 }
-.controle{
-    height: 90%;
-    margin: 5px;
+
+#botoes{
+    height: 40px;
 }
+
+#lista-btn{
+    position: absolute;
+    right: 40px;
+    bottom: 50%;
+    transform: translateY(+50%);
+}
+
 .controle:hover{
     cursor: pointer;
 }
+
 #audio{
     display: none;
 }

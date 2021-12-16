@@ -8,22 +8,27 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div id="frst-container">
-        <img id="capa" src="" alt="Capa do Album ">
-        <audio id="audio"></audio>
+    <div id="music-list">
+
+    </div>
+
+    <audio id="audio"></audio>
+    
+    <div id="controles">
         <div id="title">
             <p id="nomeMusica"></p>
         </div>
-        <div id="controles">
+        <div id="botoes">
             <img onclick="anterior()" class="controle" src="assets/images/controles/btn-anterior.png" alt="Botão Anterior">
 
             <img id="playPause" onclick="playPause(this)" class="controle" src="assets/images/controles/btn-play.png" alt="Botão Play/Pause">
 
             <img onclick="proximo()" class="controle" src="assets/images/controles/btn-proximo.png" alt="Botão Próximo">
-            
-        </div>
-    </div>
 
+            <img onclick="showList()" id="lista-btn" class="controle" src="assets/images/controles/btn-lista.png" alt="Botão Lista">
+        </div>
+    
+    </div>
     <script src="script/script.js"></script>
 </body>
 </html>
