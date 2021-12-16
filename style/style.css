@@ -20,12 +20,13 @@ body{
     border-radius: 9px;
 }
 
-#img{
+#capa{
     margin: auto;
     margin-top: 40px;
     /* margin-bottom: 10px; */
     display: block;
     width: 60%;
+    height: 350px;
     border-radius: 9px;
     border: 3.5px #386641 solid;
 }
@@ -59,4 +60,7 @@ body{
 }
 .controle:hover{
     cursor: pointer;
+}
+#audio{
+    display: none;
 }

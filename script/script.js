@@ -1,33 +1,55 @@
 var musicas = [
-    { nome: 'Musica 1', autor: 'Autor 1', src: '/assets/audios/Dead Forest - Brian Bolger.mp3'},
-    { nome: 'Musica 2', autor: 'Autor 2', src: '/assets/audios/Floating Home - Brian Bolger.mp3'},
-    { nome: 'Musica 3', autor: 'Autor 3', src: '/assets/audios/Black Mass - Brian Bolger.mp3'},
+    { nome: 'Forest', autor: 'Brian Bolger', src: '/assets/audios/Dead Forest - Brian Bolger.mp3', capa: 'assets/images/capas/capa-1.jpg'},
+    { nome: 'Floatin Home', autor: 'Brian Bolger', src: '/assets/audios/Floating Home - Brian Bolger.mp3', capa: 'assets/images/capas/capa-2.jpg'},
+    { nome: 'Black Mass', autor: 'Brian Bolger', src: '/assets/audios/Black Mass - Brian Bolger.mp3', capa: 'assets/images/capas/capa-3.jpg'},
 ]
 
 let audio = document.getElementById('audio')
-
-function play(){
-    audio.play();
-}
-
-function pausar(){
-    audio.pause();
-}
-
-
-
-
-
 var i = 0;
-function proximo(){
-    let nomeMusica = document.getElementById('nomeMusica')
+onload = mudarFaixa(i);
 
-    audio.src = musicas[i].src;
-    nomeMusica.innerHTML = musicas[i].nome + ' -  ' + musicas[i].autor;
+
+
+
+function playPause(element){
+
+    if (audio.paused) {
+        audio.play();
+        element.src = 'assets/images/controles/btn-pause.png'
+    }else{
+        audio.pause();
+        element.src = 'assets/images/controles/btn-play.png'
+    };
+}
+
+function mudarFaixa(index){
+    let capa = document.getElementById('capa')
+    let nomeMusica = document.getElementById('nomeMusica');
+    let playPause = document.getElementById('playPause');
+    playPause.src = 'assets/images/controles/btn-play.png';
+
+    capa.src = musicas[index].capa;
+
+    audio.src = musicas[index].src;
+
+    nomeMusica.innerHTML = musicas[index].nome + ' -  ' + musicas[index].autor;
+}
+
+function proximo(){
     if(i < 2){
         i++;
     }else{
         i = 0;
     };
-}
+    mudarFaixa(i);
+};
+
+function anterior(){
+    if(i > 0){
+        i--;
+    }else{
+        i = (musicas.length -1)
+    }
+    mudarFaixa(i);
+};
 

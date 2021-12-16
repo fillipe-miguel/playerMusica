@@ -9,16 +9,17 @@
 </head>
 <body>
     <div id="frst-container">
-        <img id="img" src="assets/images/pexels-aarti-vijay-2693529.jpg" alt="Capa do album 1">
-        <audio id="audio" src="assets/audios/Black Mass - Brian Bolger.mp3"></audio>
+        <img id="capa" src="" alt="Capa do Album ">
+        <audio id="audio"></audio>
         <div id="title">
-            <p id="nomeMusica">Teste de nome - alok</p>
+            <p id="nomeMusica"></p>
         </div>
         <div id="controles">
-            <img class="controle" src="assets/images/controles/para-tras.png" alt="botão anterior">
-            <img onclick="pausar()" class="controle" src="assets/images/controles/botao-de-pausa.png" alt="botão pausar">
-            <img onclick="play()" class="controle" src="assets/images/controles/botao-play.png" alt="botão play">
-            <img onclick="proximo()" class="controle" src="assets/images/controles/para-a-frente.png" alt="botão próxim o">
+            <img onclick="anterior()" class="controle" src="assets/images/controles/btn-anterior.png" alt="Botão Anterior">
+
+            <img id="playPause" onclick="playPause(this)" class="controle" src="assets/images/controles/btn-play.png" alt="Botão Play/Pause">
+
+            <img onclick="proximo()" class="controle" src="assets/images/controles/btn-proximo.png" alt="Botão Próximo">
             
         </div>
     </div>
@@ -26,3 +27,14 @@
     <script src="script/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+<!-- <div id="durationControl">
+                    <div class="durationTime" id="current_duration">00:00</div>
+                    <input id="seekbar" type="range" min="0" max="0" step="1">
+                    <div class="durationTime" id="total_duration">00:00</div>
+                </div> -->
